@@ -1,0 +1,102 @@
+#container {
+    margin: 0 20%;
+    background-color: #f1e5d6;
+    height: 900px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 2px solid #000;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px 0;
+}
+
+table {
+    border-spacing: 5px;
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(odd) {
+    background-color: #d2691e;
+}
+
+tr:nth-child(even) {
+    background-color: #008b8b;
+}
+
+
+/*
+tr:nth-child(odd):not(:first-child) {
+    background-color: #d2691e;
+}
+*/
+
+th {
+    background-color: #fff !important;
+}
+
+tr:hover {
+    background-color: #a9a9a9;
+}
+
+.img-tbl {
+    width: 25%;
+    margin: auto;
+    display: block;
+}
+
+.info input[type=text],
+.info input[type=email] {
+    padding: 4px;
+    border-radius: 5px;
+    border: none;
+    width: 70%;
+    display: block;
+    outline: none;
+}
+
+.gen label {
+    position: absolute;
+}
+
+.gen input[type=radio] {
+    margin-left: 80px;
+}
+
+.endereco select {
+    padding: 4px;
+    outline: none;
+    border: none;
+}
+
+input[type=submit] {
+    display: block;
+    margin: 10px auto;
+    width: 50%;
+    padding: 10px;
+    border: none;
+    background-color: #1e90ff;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+input[type=submit]:hover {
+    opacity: 1;
+}
+
+input:focus:invalid {
+    border: 2px solid #dc143c;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css" type="text/css">
+    <title>FORMS</title>
+</head>
+
+<body>
+    <div id="container">
+
+        <h1>EXEMPLO DE FORMULÁRIO</h1>
+
+        <div>
+            <form action="tabela.html" method="GET">
+                <fieldset class="info">
+                    <legend>FORMULÁRIO DE CADASTRO</legend>
+                    <div>
+                        <label for="idTxtNm">Nome:</label>
+                        <input type="text" name="txtNm" id="idTxtNm" placeholder="Digite seu nome."
+                            oninvalid="setCustomValidity('Este campo deve ser preenchido!')"
+                            pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ]{3,}$" required>
+                    </div>
+                    <div>
+                        <label for="idTxtProf">Profissão:</label>
+                        <input type="text" name="txtProf" id="idTxtProf" placeholder="Digite sua profissão." required
+                            oninvalid="setCustomValidity('Este campo deve ser preenchido!')"
+                            pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ]{5,}$">
+                    </div>
+                    <div>
+                        <!-- profalexandre.jesus@fiap.com.br -->
+                        <label for="idTxtEmail">Email:</label>
+                        <input type="email" name="txtEmail" id="idTxtEmail" placeholder="Digite seu email." required
+                            oninvalid="setCustomValidity('Deve ser preenchido com um endereço de Email válido!')">
+                    </div>
+                </fieldset>
+                <fieldset class="gen">
+                    <legend>GÊNERO</legend>
+                    <div>
+                        <div><label for="idRdbGenM">Masculino</label>
+                            <input type="radio" name="rdbGen" id="idRdbGenM" value="m" checked="checked">
+                        </div>
+                        <div><label for="idRdbGenF">Feminino</label>
+                            <input type="radio" name="rdbGen" id="idRdbGenF" value="f">
+                        </div>
+                        <div><label for="idRdbGenO">Outros</label>
+                            <input type="radio" name="rdbGen" id="idRdbGenO" value="o">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="endereco">
+                    <legend>ENDEREÇO</legend>
+                    <div>
+                        <label for="idSelEstado">ESTADOS</label>
+                        <select name="selEstado" id="idSelEstado">
+
+                            <option value="sp">São Paulo</option>
+                            <option value="rj">Rio de Janeiro</option>
+                            <option value="sc">Sta Catarina</option>
+                            <option value="ba">Bahia</option>
+                            <option selected="selected" value="0">Selecione uma opção</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <div>
+                    <input type="submit" value="ENVIAR">
+                </div>
+
+            </form>
+        </div>
+
+        <div>
+            <h2>EXEMPLO DE QUERY STRING</h2>
+            <div>
+                <a href="tabela.html?data=Março&user-agent=mozilla">QUERY-STRING</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
